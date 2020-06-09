@@ -1,0 +1,32 @@
+<div class="container"><!--This will show a table of the data-->
+                <table class="table table-bordered dataTable">
+                    <thead>
+                      <tr>
+                        <th>CRN</th>
+                        <th>Date</th>
+                        <th>Fraud</th>
+                        <th>Flag</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>123434</td>
+                        <td>11/04/2020</td>
+                        <td>john@example.com</td>
+                        <td>NO</td>
+                      </tr>
+                      <tr>
+                        <td>123446</td>
+                        <td>11/05/2020</td>
+                        <td>mary@example.com</td>
+                        <td>NO</td>
+                      </tr>
+                      <tr style="background-color:lightcoral;">
+                        <td>123446</td>
+                        <td>11/05/2020</td>
+                        <td>july@example.com</td>
+                        <td>YES</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
