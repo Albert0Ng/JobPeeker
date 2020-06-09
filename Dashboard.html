@@ -30,15 +30,63 @@
             </ul>
         
             <div id="flip">Customize data visualization</div>
-            <div id="panel">
+            <div id="panel"><!--Panel to choose how to view data-->
+                <div class="row"><!--panel view for all the options-->
+                    <div class = "col-sm-6"><!--Right side of panel-->
+                    
+                        <div class="formsRow">Forms</div> <!--Let's user choose which forms to view-->
+                        <select id="formsSelector" name="formsSelector">
+                            <option value="JobSeeker">JobSeeker</option>
+                            <option value="JobKeeper">JobKeeper</option>
+                          </select><!--Let's user choose which forms to view-->
+                          
+                          <div><!--Lets user choose view options-->
+                        <div class="formsRow">View Type</div> 
+                        <input type="radio" id="listRadio" name="viewtype" value="List">
+                            <label for="male">List</label><br>
+                            <input type="radio" id="cellRadio" name="viewtype" value="Cells">
+                            <label for="female">Cells</label><br>
+                    </div><!--Lets user choose view options-->
 
+                    <div class="formsRow">Limit rows</div>
+                    <div>
+                        <input type="number" class="inputBar"id="rowsInput" name="rows" placeholder="1">
+                    </div>
+
+                    </div>
+
+                    <div class= "col-sm-6"><!--Left side of panel-->
+                        <div class = "formsRow">
+                            Sort
+                        </div>
+                        <div><!--Lets users sort through data-->
+                            <select id="formsSelector" name="formsSelector">
+                                <option value="DATE">date</option>
+                                <option value="TFN">TFN</option>
+                                <option value="CRN">CRN</option>
+                              </select>
+                        </div>
+                        <div class="formsRow">Fraud cases only</div>
+                        <input type="radio" id="listRadio" name="viewtype" value="List">
+                        <label for="male">Yes</label><br>
+                        <div>
+
+                        </div>
+                    </div><!--left side of the panel-->
+
+                    <button type="button" style="margin:auto;" class="btn btn-primary">Search</button>
+                    
+                    </div><!--panel view for all the options-->
+                </div><!--Panel for choose how to view data-->
             </div>
 
-            <div class="divider">
+            <div class="divider"><!--For adding space between data customization panel and actual view-->
 
-            </div>
-            
-            <div class="row" style="margin: 0px;"><!--This row is for storing the actual dashboard data-->
+            </div><!--For adding space between data customization panel and actual view-->
+            <div class="formsRow" style="text-align:center">JobKeeper</div>
+
+            <div class="row" id="profileList" style="margin:0px;"><!--This row is for storing the actual dashboard data-->
+                
                 <div class="col-sm-4">
                     <div class="card bg-primary"><!--A card representing a potential fraud case-->
                         <div class="card-header">
@@ -65,13 +113,13 @@
                         <div class="card-body">
                             Short summary of potential fraud from which department
                         </div>
-                    </div><!--A card representing a potential fraud case-->
-
-                <div class="col-sm-7"></div>
-                <div class="col-sm-3"></div>
-
-            </div><!--This row is for storing the actual dashboard data-->
+                    </div><!--A card repesenting a potential fraud case-->
+                    
             </div>
+
+            <div class="col-sm-8">sdfsd</div>
+            </div><!--This row is for storing the actual dashboard data-->
+
     </body>
 
     <script src="Function.js"></script>
