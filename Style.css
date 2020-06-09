@@ -83,6 +83,7 @@ ul{
     padding: 10px;
     background-color: rgb(242, 242, 242);
     display:none;
+    color:black;
   }
 
   .cards{
@@ -90,5 +91,38 @@ ul{
   }
 
   .divider{
-      margin:20px;
+      margin:10px;
+  }
+
+  #formsSelect{
+      width:100px;
+      margin:50px;
+  }
+
+  .formsRow{
+      color:white;
+      width:98%;
+      background-color:rgb(0, 61, 153);
+      margin:15px;
+  }
+
+  #profileList{
+      /*WARNING WARNING
+      DO NOT SET DISPLAY TO BLOCK AS IT STACKS BOOTSTRAP COLUMN ON TOP OF EACH OTHER
+      ONLY USE DEFAULT
+      */
+      display:default;
+  }
+
+  .dataTable{
+      display:none;/*For displaying the data in tabular format*/
+  }
+
+  th{
+      background-color:rgb(0, 61, 153);
+      color:white;
+  }
+
+  td{
+
   }
